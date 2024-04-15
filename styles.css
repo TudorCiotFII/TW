@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background: #5D3FD3;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.2rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #333;
+}
+
+footer {
+    background: #5D3FD3;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+button {
+    display: inline-block;
+    padding: 12px 25px;
+    cursor: pointer;
+    background: #4e32c7;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #3d2786;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #5D3FD3;
+}
+
+
+.login-container {
+    background-color: #fff;
+    margin-top: 2rem;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    margin: 3rem auto;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 0;
+    }
+}
+
+
+.about-page {
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    margin-top: 2rem;
+}
+
+.about-page h1 {
+    font-size: 2.2rem;
+}
+
+
+.main-page-header {
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    padding: 5rem 0;
+}
+
+.main-page-header h2 {
+    font-size: 3.2rem;
+}
+
+.main-page-header p {
+    font-size: 1.3rem;
+}
+a, button {
+    transition: all 0.3s ease;
+}
+
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+button, .login-container, .about-page {
+    transition: box-shadow 0.3s ease;
+}
+
+button:active, .button:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+a:hover, button:hover {
+    transform: translateY(-2px);
+}
+
+a:active, button:active {
+    transform: translateY(1px);
+}
+
+
+.container, .card {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .container, .card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul li {
+        padding: 0.5rem;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+}
+
+
+.main-page-header {
+    background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    background: #f4f4f9;
+    border: none;
+    box-shadow: -5px -5px 10px #ffffff, 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
+
+button:hover,
+a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active,
+a:active {
+    transform: scale(0.95);
+}
+
+element {
+    background-image: url('D/TW/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
