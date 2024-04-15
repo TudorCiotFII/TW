@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>MoX - Movies and TV Shows Explorer</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>MoX</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to MoX</h2>
+                    <h3>Your ultimate movies and TV shows explorer</h3>
+                </hgroup>
+                <p>Explore a vast library of movies and TV shows from Netflix and Disney, integrated with additional information from The Movie Database (TMDb).</p>
+                <figure>
+                    <img src="bg.png" alt="Placeholder image" />
+                    <figcaption>An illustrative representation of streaming exploration</figcaption>
+                </figure>
+                <h3>Interactive Data Presentations</h3>
+                <p>Visualize data in various formats and export in CSV, WebP, and SVG.</p>
+                <h3>Advanced Search and Filtering</h3>
+                <p>Use multi-criteria search and filtering to find exactly what you're looking for.</p>
+            </section>
+        </div>
+    </main>
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Stay Updated</h2>
+                    <h3>Subscribe to our newsletter</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required />
+                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
+                    <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer class="container">
+        <small>
+            <a href="#privacy">Privacy Policy</a> • <a href="#terms">Terms of Use</a>
+        </small>
+    </footer>
+</body>
+</html>
