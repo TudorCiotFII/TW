@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="styles.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../static/index/styles.css" />
+    <link rel="stylesheet" href="../static/navbar/styles.css" />
+    <link rel="stylesheet" href="../static/footer/styles.css" />
+    <link rel="stylesheet" href="../static/profile/styles.css" />
+    <title>MoX - Movies and TV Shows Explorer</title>
+  </head>
+  <body>
+    <header id="page-header">##navbar##</header>
+    <div id="main">
+      <div class="profile-container">
+        <div class="menu-container">
+          <img src="../static/assets/profile.png" class="profile-image" />
+          <ul class="commands">
+            <a href="#" id="account-overview-link"
+              ><i class="fa fa-home"></i> &nbsp; Account overview</a
+            >
+            <a href="#" id="edit-profile-link"
+              ><i class="fa fa-user"></i> &nbsp; Edit profile</a
+            >
+            <a href="#" id="change-password-link"
+              ><i class="fa fa-lock"></i> &nbsp; Change password</a
+            >
+          </ul>
+        </div>
+        <div class="data-container">
+          <div class="dropdown">
+            <select name="account" id="account">
+              <option value="account-overview">Account overview</option>
+              <option value="edit-profile">Edit profile</option>
+              <option value="change-password">Change password</option>
+            </select>
+          </div>
+          <div id="account-overview" class="content-block">
+            <h1 class="title">Account overview</h1>
+            <h1 class="subtitle">Profile</h1>
+            <div class="user-info">
+              <p>
+                <strong>First Name:&#160;&#160;</strong>
+                <span id="first-name"></span>
+              </p>
+              <p>
+                <strong>Last Name:&#160;&#160;</strong>
+                <span id="last-name"></span>
+              </p>
+              <p>
+                <strong>Username:&#160;&#160;</strong>
+                <span id="username"></span>
+              </p>
+              <p>
+                <strong>Email:&#160;&#160;</strong>
+                <span id="email"></span>
+              </p>
+            </div>
+            <button id="edit-profile-button">Edit profile</button>
+          </div>
+
+          <div id="edit-profile" class="content-block">
+            <h1 class="title">Edit Profile</h1>
+            <form>
+              <label for="first-name-input">First Name:</label>
+              <input
+                type="text"
+                id="first-name-input"
+                name="first-name-input"
+                placeholder="##firstname##"
+              /><br /><br />
+
+              <label for="last-name-input">Last Name:</label>
+              <input
+                type="text"
+                id="last-name-input"
+                name="last-name-input"
+                placeholder="##lastname##"
+              /><br /><br />
+
+              <label for="username-input">Username:</label>
+              <input
+                type="text"
+                id="username-input"
+                name="username"
+                placeholder="##username##"
+              /><br /><br />
+
+              <label for="email-input">Email:</label>
+              <input
+                type="email-input"
+                id="email-input"
+                name="email"
+                placeholder="##email##"
+              /><br /><br />
+
+              <button id="save-changes-button">Save Changes</button>
+            </form>
+          </div>
+          <div id="change-password" class="content-block">
+            <h1 class="title">Change Password</h1>
+            <form>
+              <label for="old-password-input">Current Password:</label>
+              <input
+                type="password"
+                id="old-password-input"
+                name="currentPassword"
+              /><br /><br />
+
+              <label for="new-password-input">New Password:</label>
+              <input
+                type="password"
+                id="new-password-input"
+                name="newPassword"
+              /><br /><br />
+
+              <label for="confirmPassword">Confirm New Password:</label>
+              <input
+                type="password"
+                id="confirm-password-input"
+                name="confirm-password-input"
+              /><br /><br />
+
+              <button id="change-password-button">Change Password</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="page-footer">##footer##</footer>
+
+    <script src="../static/profile/script.js"></script>
+    <script src="../static/navbar/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Documentation</title>
+    <style>
+      .normal img {
+        width: 100%;
+      }
+      .mobile img {
+        width: 100%;
+      }
+      .images{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <header>
+        <h1>MoX - Movies and TV Shows Explorer</h1>
+      </header>
+
+      <div role="contentinfo">
+        <section typeof="sa:AuthorsList">
+          <h2>Actori</h2>
+          <ul>
+            <li typeof="sa:ContributorRole" property="schema:author">
+              <span property="schema:name">Ciot Tudor</span>
+            </li>
+
+            <li typeof="sa:ContributorRole" property="schema:author">
+              <span property="schema:name">Romascu Valentin Gabriel</span>
+            </li>
+            </ul>
+          </ul>
+        </section>
+      </div>
+
+      <section>
+        <h3>1. Introducere</h3>
+        <section>
+          <h4>1.1 Scop</h4>
+          <p>
+            Scopul principal al acestui document este de a oferi o imagine de
+            ansamblu aprofundată a aplicației online MoX - Movies and TV Shows
+            Explorer. Acesta va descrie funcțiile, caracteristicile și
+            interfețele software-ului, precum și ceea ce va face și limitările
+            pe care trebuie să le respecte. Utilizatorii potențiali ai
+            programului sunt publicul țintă pentru această lucrare.
+          </p>
+        </section>
+
+        <section>
+          <h4>1.2 Convenții</h4>
+          <p>
+            Acest document a fost creat pe baza modelului IEEE System
+            Requirement Specification Documents.
+          </p>
+        </section>
+
+        <section>
+          <h4>1.3 Utilizatori potențiali</h4>
+          <p>
+            Aceast document este destinat echipei de dezvoltare și designerilor
+            care lucrează la dezvoltarea, îmbunătățirea și menținerea
+            aplicației, dar poate fi de asemenea utilă și pentru managerii de
+            proiect care coordonează activitățile de dezvoltare, precum și
+            pentru alte persoane interesate de specificațiile și detaliile
+            aplicației.
+          </p>
+        </section>
+
+        <section>
+          <h4>1.4 Scopul aplicației</h4>
+          <p>
+            MoX - Movies and TV Shows Explorer este o aplicație online destinată
+            utilizatorilor care își doresc să găsească cu ușurință informații
+            detaliate despre filme și seriale TV. Această platformă este o sursă
+            ideală pentru cinefili și pentru oricine dorește să descopere noi
+            producții de film sau televiziune.
+          </p>
+
+          <p>
+            Prin intermediul MoX, utilizatorii pot căuta filme și seriale TV,
+            pot vedea informații detaliate despre producțiile dorite, precum și
+            recenzii și ratinguri date de alți utilizatori. De asemenea,
+            aplicația permite utilizatorilor să salveze producțiile preferate în
+            lista lor de vizionare și să primească recomandări personalizate
+            bazate pe istoricul lor de vizionare.
+          </p>
+
+          <p>
+            MoX oferă, de asemenea, o interfață prietenoasă și ușor de utilizat,
+            astfel încât orice utilizator, indiferent de nivelul lor de
+            cunoștințe în tehnologie, să poată interacționa cu aplicația fără
+            probleme.
+          </p>
+
+          <p>
+            În general, MoX - Movies and TV Shows Explorer este o aplicație
+            ideală pentru cei care doresc să descopere noi producții de film sau
+            televiziune, să găsească informații detaliate despre acestea și să
+            își organizeze lista de vizionare.
+          </p>
+        </section>
+
+        <section>
+          <h4>1.5 Referințe</h4>
+          <p></p>
+        </section>
+      </section>
+
+      <section>
+        <h3>2. Descriere generală</h3>
+        <section>
+          <h4>2.1 Descrierea proiectului</h4>
+          <p>
+            MoX - Movies and TV Shows Explorer este o aplicație online care
+            oferă utilizatorilor acces la informații detaliate despre filme și
+            seriale TV. Aceasta permite utilizatorilor să caute producții
+            cinematografice, să afle detalii despre distribuție, rating-uri și
+            recenzii, precum și să-și organizeze propriile liste de vizionare.
+          </p>
+        </section>
+
+        <section>
+          <h4>2.2 Funcționalități</h4>
+          <p>
+            Aplicația oferă o experiență de utilizare intuitivă și eficientă,
+            fiind proiectată pentru a satisface nevoile utilizatorilor
+            interesați de descoperirea și organizarea producțiilor
+            cinematografice și TV.
+          </p>
+
+          <b>Navbar :</b>
+          <ul>
+            <li>
+              Bara de navigare (navbar) este prezentă în antetul aplicației și
+              poate fi accesată în mod constant pe toate paginile.
+            </li>
+            <li>
+              Aceasta conține un logo reprezentativ al aplicației, oferind un
+              element vizual recunoscut utilizatorilor.
+            </li>
+            <li>
+              Meniul de comenzi din bara de navigare include opțiuni importante
+              pentru navigarea în aplicație, cum ar fi "Home" (Pagina
+              principală), "Movie List" (Lista de filme), "Statistics"
+              (Statistici) și "About" (Despre).
+            </li>
+            <li>
+              Pe dispozitivele mobile, bara de navigare este comprimată și poate
+              fi extinsă prin selectarea unei iconițe din partea dreaptă sus a
+              ecranului.
+            </li>
+            <li>
+              Scopul barei de navigare este de a facilita utilizatorilor
+              navigarea rapidă și ușoară în cadrul aplicației, oferind acces
+              direct la paginile și funcționalitățile cheie.
+            </li>
+            <li>
+              Logo-ul aplicației contribuie la crearea unei identități vizuale
+              distinctive și memorabile, iar meniul de comenzi oferă o navigare
+              structurată și intuitivă.
+            </li>
+            <li>
+              Prin intermediul barei de navigare, utilizatorii pot accesa rapid
+              și convenabil paginile dorite și pot explora diferitele
+              funcționalități și informații disponibile în aplicație.
+            </li>
+            <li>
+              Designul și interacțiunea barei de navigare sunt adaptate pentru a
+              se potrivi atât pe dispozitive desktop, cât și pe dispozitive
+              mobile, asigurând o experiență coerentă pentru utilizatori
+              indiferent de platforma folosită.
+            </li>
+          </ul>
+          <div class="images">
+          <div class="mobile"><img id="mobile" src="./assets/navbarMobile.png" /></div>
+          </div>
+          <br></br>
+
+          <b>Footer :</b>
+          <ul>
+            <li>
+              Footer-ul este afișat în partea de jos a fiecărei pagini din
+              aplicația noastră, oferind informații contractuale importante.
+            </li>
+            <li>
+              În secțiunea footer, utilizatorii pot găsi următoarele informații:
+            </li>
+            <ul>
+              <li>
+                Termeni și condiții - Aici se găsesc informații detaliate
+                referitoare la termenii și condițiile de utilizare a aplicației
+                noastre.
+              </li>
+              <li>
+                Politica de confidențialitate - Această secțiune oferă
+                utilizatorilor detalii despre modul în care gestionăm datele lor
+                personale și cum le protejăm confidențialitatea.
+              </li>
+              <li>
+                Contact - Utilizatorii pot găsi informații despre cum pot intra
+                în contact cu echipa noastră, cum ar fi adresa de e-mail sau
+                numărul de telefon.
+              </li>
+            </ul>
+            <li>
+              Footer-ul servește drept o sursă importantă de informații legate
+              de contract și facilitează interacțiunea utilizatorilor cu
+              aspectele legale și de suport ale aplicației noastre.
+            </li>
+          </ul>
+
+          <b>Overview page :</b>
+          <ul>
+            <li>
+              Pagina de prezentare generală este pagina inițială care apare la
+              accesarea aplicației noastre si se gaseste la adresa /overview.
+            </li>
+            <li>
+              Utilizatorii au două opțiuni: se pot înregistra sau se pot
+              autentifica pentru a continua utilizarea aplicației.
+            </li>
+            <li>
+              Sunt afișate două butoane distincte: unul pentru înregistrare și
+              unul pentru autentificare.
+            </li>
+            <li>
+              Pe fundalul paginii se află un colaj atrăgător cu mai multe
+              imagini reprezentând diverse filme.
+            </li>
+            <li>
+              Scopul colajului este să capteze atenția și interesul
+              utilizatorilor, creând o atmosferă cinematografică și invitându-i
+              să exploreze mai departe.
+            </li>
+          </ul>
+          <div class="images">
+            <img src="./assets/overview.png" style="width: 800px; height: 450px; object-fit: fill"/>
+            <br></br>
+            </div>
+
+          <b>Login page :</b>
+          <ul>
+            <li>
+              Pagina de autentificare (login) este o pagină dedicată
+              introducerii numelui de utilizator și parolei.
+            </li>
+            <li>Această pagină poate fi accesată la adresa /login.</li>
+            <li>
+              Utilizatorii sunt invitați să completeze câmpurile necesare pentru
+              a se autentifica în aplicație.
+            </li>
+            <li>
+              Pe pagina de autentificare, utilizatorii pot introduce numele de
+              utilizator (username) și parola asociată contului lor.
+            </li>
+            <li>
+              Scopul paginii de autentificare este de a verifica identitatea
+              utilizatorului și de a permite accesul în contul personal.
+            </li>
+            <li>
+              Utilizatorii pot apăsa pe un buton de autentificare pentru a
+              trimite datele introduse și a confirma autentificarea.
+            </li>
+            <li>
+              Dacă datele introduse sunt corecte, utilizatorii vor fi
+              redirecționați către pagina principală a aplicației, Home page.
+            </li>
+            <li>
+              Pagina de autentificare este esențială pentru a asigura
+              securitatea și protecția conturilor utilizatorilor în aplicația
+              noastră.
+            </li>
+          </ul>
+
+          <b>Register page :</b>
+          <ul>
+            <li>
+              Pagina de înregistrare este o pagină dedicată în care utilizatorii
+              pot crea un cont nou în aplicația noastră.
+            </li>
+            <li>Această pagină poate fi accesată la adresa /register.</li>
+            <li>
+              Utilizatorii sunt invitați să completeze câmpurile necesare pentru
+              a crea un cont.
+            </li>
+            <li>
+              Pe pagina de înregistrare, utilizatorii pot introduce următoarele
+              informații: nume, prenume, username (nume de utilizator), parolă
+              și adresa de email.
+            </li>
+            <li>
+              Scopul paginii de înregistrare este de a permite utilizatorilor
+              să-și creeze un cont personalizat în aplicație.
+            </li>
+            <li>
+              Utilizatorii trebuie să completeze toate câmpurile obligatorii
+              pentru a finaliza procesul de înregistrare.
+            </li>
+            <li>
+              Pagina de înregistrare poate include și un câmp de confirmare a
+              parolei, unde utilizatorii trebuie să reintroducă parola pentru a
+              se asigura că nu au fost făcute erori de tastare.
+            </li>
+            <li>
+              După finalizarea înregistrării cu succes, utilizatorii pot fi
+              redirecționați către pagina principala a aplicatiei, Home page.
+            </li>
+            <li>
+              Pagina de înregistrare este esențială pentru a permite
+              utilizatorilor să aibă acces la funcționalitățile și conținutul
+              personalizat oferit de aplicația noastră.
+            </li>
+          </ul>
+          <div class="images">
+            <br></br>
+            <img src="./assets/registerMobile.png" style="width: 262px; height: 450px; object-fit: fill"/>
+            </div>
+
+          <b>Home page :</b>
+          <ul>
+            <li>
+              Pagina principală (Home Page) poate fi accesată la adresa /.
+            </li>
+            <li>
+              Pe această pagină veți găsi un banner vizual cu informații despre
+              filme.
+            </li>
+            <li>Filmul din banner se schimba la cateva secunde.</li>
+            <li>
+              Bannerul nu este afișat pe dispozitivele mobile, pentru a
+              simplifica experiența utilizatorilor.
+            </li>
+            <li>
+              Filmele prezentate în banner sunt obținute prin apelarea unui API
+              la The Movie Database (TMDb), o sursă externă de încredere pentru
+              informații despre filme.
+            </li>
+            <li>
+              Sub banner, veți găsi cinci rânduri separate de filme din
+              categorii diferite.
+            </li>
+            <li>
+              Puteți naviga prin aceste rânduri de filme folosind
+              funcționalitatea de swipe right/swipe left.
+            </li>
+            <li>
+              Atunci când plasați cursorul mouse-ului peste un film, veți vedea
+              titlul și ratingul acestuia.
+            </li>
+            <li>
+              Această funcționalitate vă ajută să obțineți informații
+              suplimentare despre fiecare film înainte de a decide să-l
+              vizionați.
+            </li>
+          </ul>
+          <div class="images">
+            <img src="./assets/home.png" style="width: 800px; height: 450px; object-fit: fill"/>
+            <br></br>
+            <img src="./assets/homeMobile.png" style="width: 262px; height: 450px; object-fit: fill"/>
+            </div>
+          <br></br>
+
+          <b>Details page :</b>
+          <ul>
+            <li>
+              Pagina de detalii a filmului poate fi accesată la adresa
+              /movie/{movieId}, unde {movieId} reprezintă identificatorul unic
+              al filmului.
+            </li>
+            <li>
+              Pe această pagină veți găsi informații detaliate despre filmul
+              selectat.
+            </li>
+            <li>
+              Ratingul filmului este afișat în mod vizibil, oferind o
+              perspectivă asupra calității și popularității acestuia.
+            </li>
+            <li>
+              Durata filmului este prezentată pentru a vă ajuta să estimați cât
+              timp durează vizionarea.
+            </li>
+            <li>
+              Genurile din care face parte filmul sunt enumerate, oferindu-vă o
+              idee clară despre tipul de conținut pe care îl veți găsi.
+            </li>
+            <li>
+              Actorii principali care joacă în film sunt menționați,
+              permițându-vă să identificați distribuția și să aflați mai multe
+              despre interpretările lor.
+            </li>
+            <li>
+              Poze cu actorii sunt disponibile, adăugând o dimensiune vizuală în
+              prezentarea lor.
+            </li>
+            <li>
+              O descriere cuprinzătoare a filmului este prezentată, oferindu-vă
+              un context și o perspectivă asupra poveștii și tematicii acestuia.
+            </li>
+          </ul>
+          <div class="images">
+            <img src="./assets/details.png" style="width: 800px; height: 450px; object-fit: fill"/>
+            <br></br>
+            <img src="./assets/detailsMobile.png" style="width: 262px; height: 450px; object-fit: fill"/>
+            </div>
+
+          <b>Movies list page :</b>
+          <ul>
+            <li>Se gaseste la adresa /list.</li>
+            <li>
+              Pagina "Movies List" este o pagină în care utilizatorii pot
+              vizualiza și filtra filmele în funcție de trei categorii: gen,
+              rating și anul lansării.
+            </li>
+            <li>
+              Pe pagina "Movies List", utilizatorii pot interacționa cu trei
+              dropdown-uri separate pentru a selecta opțiunile de filtrare
+              dorite.
+            </li>
+            <li>
+              Filtrarea poate fi realizată pe baza genului, ratingului și anului
+              lansării filmelor.
+            </li>
+            <li>
+              După aplicarea filtrelor, filmele care corespund criteriilor de
+              selecție vor fi afișate utilizatorului.
+            </li>
+            <li>
+              Fiecare film este prezentat cu o imagine reprezentativă și o
+              descriere concisă.
+            </li>
+            <li>
+              Pagina "Movies List" include și un buton de căutare, unde
+              utilizatorul poate introduce un cuvânt cheie sau numele unui film
+              pentru o filtrare mai usoara.
+            </li>
+            <li>
+              În partea de jos a paginii, se afișează o paginare care permite
+              utilizatorului să navigheze prin diferitele pagini de rezultate.
+            </li>
+            <li>
+              Utilizatorul poate selecta o pagină specifică sau poate folosi
+              butonul "Next Page" pentru a avansa la pagina următoare.
+            </li>
+            <li>
+              De asemenea, în partea de jos a paginii se găsește un buton care
+              permite utilizatorului să selecteze numărul de filme dorit pentru
+              afișarea într-o singură pagină.
+            </li>
+          </ul>
+          <div class="images">
+          <img src="./assets/list.png" style="width: 800px; height: 450px; object-fit: fill"/>
+          <br></br>
+          <img src="./assets/listMobile.png" style="width: 262px; height: 450px; object-fit: fill"/>
+          </div>
+          <br></br>
+
+          <b>My profile page :</b>
+          <ul>
+            <li>
+              Pagina "Profile" (Profil) poate fi accesată la adresa /profile și
+              reprezintă o pagină dedicată informațiilor și acțiunilor legate de
+              contul utilizatorului.
+            </li>
+            <li>
+              În partea stângă a paginii, utilizatorul poate vizualiza un meniu
+              vertical care conține mai multe opțiuni pentru comenzi:
+            </li>
+            <ul>
+              <li>
+                "Account Overview" (Prezentare generală a contului) - afișează
+                informații despre contul utilizatorului, cum ar fi nume, adresă
+                de e-mail și alte detalii relevante.
+              </li>
+              <li>
+                "Edit Profile" (Editare profil) - permite utilizatorului să
+                acceseze o pagină unde poate modifica informațiile de profil
+                existente.
+              </li>
+              <li>
+                "Change Password" (Schimbare parolă) - duce utilizatorul la o
+                pagină unde poate actualiza parola contului său.
+              </li>
+              <li>
+                "Favourite Movies" (Filme favorite) - afișează o listă de filme
+                favorite ale utilizatorului.
+              </li>
+            </ul>
+            <li>
+              La selectarea unui buton din meniu, se va afișa pagina
+              corespunzătoare în partea dreaptă a ecranului.
+            </li>
+            <li>
+              Pagina "Account Overview" conține informații detaliate despre
+              contul utilizatorului și poate afișa, de exemplu, numele, adresa
+              de e-mail și alte detalii relevante.
+            </li>
+            <li>
+              Pagina "Account Overview" include și un buton "Edit Profile"
+              (Editare profil), care permite utilizatorului să acceseze pagina
+              de editare a profilului pentru a actualiza informațiile personale.
+            </li>
+            <li>
+              Pagina "Change Password" (Schimbare parolă) oferă utilizatorului
+              posibilitatea de a introduce noile date de autentificare pentru
+              a-și actualiza parola.
+            </li>
+            <li>
+              Pagina "Favourite Movies" (Filme favorite) afișează o listă a
+              filmelor preferate ale utilizatorului, oferindu-i astfel
+              posibilitatea de a reveni rapid la filmele pe care le-a selectat
+              anterior.
+            </li>
+            <li>
+              În paginile "Edit Profile" și "Change Password", utilizatorul
+              poate introduce informațiile cerute în câmpurile corespunzătoare
+              și apoi apăsa butonul corespunzător pentru a finaliza acțiunea.
+            </li>
+          </ul>
+          <div class="images">
+            <img src="./assets/profile.png" style="width: 800px; height: 450px; object-fit: fill"/>
+            <br></br>
+            <img src="./assets/profileMobile.png" style="width: 262px; height: 450px; object-fit: fill"/>
+            </div>
+          <br></br>
+
+          <b>Admin page :</b>
+          <ul>
+            <li>
+              Pagina "Admin" (Administrator) este o pagină specială care poate
+              fi accesată la adresa /admin și este disponibilă doar pentru
+              utilizatorii cu rol de administrator.
+            </li>
+            <li>
+              Pe pagina "Admin", administratorul are acces la informații și
+              funcționalități specifice pentru gestionarea utilizatorilor
+              înregistrați în aplicație.
+            </li>
+            <li>
+              Unul dintre principalele scopuri ale paginii "Admin" este de a
+              permite administratorului să vizualizeze o listă completă a
+              utilizatorilor înregistrați în aplicație.
+            </li>
+            <li>
+              Pagina "Admin" oferă, de asemenea, posibilitatea administratorului
+              de a efectua modificări sau acțiuni specifice asupra
+              utilizatorilor, cum ar fi actualizarea datelor de profil.
+            </li>
+            <li>
+              Este important de menționat că accesul la pagina "Admin" este
+              restricționat și disponibil doar pentru utilizatorii care dețin
+              rolul de administrator, asigurând astfel o securitate și un
+              control adecvat asupra funcționalităților administrative.
+            </li>
+            <li>
+              Pagina "Admin" reprezintă o zonă dedicată gestionării și
+              administrării eficiente a utilizatorilor în cadrul aplicației,
+              permițând administratorului să monitorizeze și să modifice datele
+              utilizatorilor într-un mod controlat și sigur.
+            </li>
+          </ul>
+          <div class="images">
+            <img src="./assets/admin.png" style="width: 800px; height: 450px; object-fit: fill"/>
+            <br></br>
+            <img src="./assets/adminMobile.png" style="width: 262px; height: 450px; object-fit: fill"/>
+            </div>
+          <br></br>
+
+          <b>Statistics page :</b>
+
+          <b>404 Not found page</b>
+          <ul>
+            <li>
+              Pagina "Not Found" (Pagina nu a fost găsită) este o pagină care
+              este afișată atunci când path-ul (calea) accesată de utilizator nu
+              este recunoscută în cadrul aplicației noastre.
+            </li>
+            <li>
+              Această pagină poate fi accesată în cazul în care un utilizator
+              introduce o adresă URL incorectă sau încearcă să acceseze o pagină
+              care nu există.
+            </li>
+            <li>
+              Pagina "Not Found" conține un mesaj informativ care indică
+              utilizatorului că pagina solicitată nu a fost găsită.
+            </li>
+            <li>
+              De asemenea, pagina "Not Found" poate include un link care
+              redirecționează utilizatorul către pagina de "Home" (Pagina
+              principală).
+            </li>
+            <li>
+              Link-ul către pagina de "Home" poate oferi o opțiune convenabilă
+              pentru utilizator de a reveni la pagina principală a aplicației și
+              de a continua navigarea.
+            </li>
+            <li>
+              Pagina "Not Found" are rolul de a îmbunătăți experiența
+              utilizatorului prin furnizarea unei reacții corespunzătoare atunci
+              când se întâlnesc erori de navigare sau adrese URL invalide.
+            </li>
+          </ul>
+          <p>
+            Este important de reținut că
+            <span style="color: red">toate paginile sunt responsive</span> și se
+            vor adapta automat la diferite dimensiuni de ecran.
+          </p>
+        </section>
+
+        <section>
+          <h4>2.3 Utilizatori</h4>
+          <ul>
+            <li>
+              Guest: Aceștia sunt utilizatorii care accesează site-ul MoX fără a
+              fi autentificați cu un cont de utilizator. Aceștia pot căuta filme
+              și seriale TV și pot vizualiza informații despre acestea, dar nu
+              pot adăuga produse în liste de vizionare sau în lista personală de
+              produse vizualizate.
+            </li>
+            <li>
+              User: Aceștia sunt utilizatorii care s-au înregistrat cu un cont
+              de utilizator și s-au autentificat în aplicația MoX. Aceștia pot
+              căuta filme și seriale TV, pot vizualiza informații detaliate
+              despre acestea și pot adăuga producții în liste de vizionare sau
+              în lista personală de produse vizualizate.
+            </li>
+            <li>
+              Admin: Acești utilizatori au acces la funcționalități suplimentare
+              de administrare a site-ului și pot efectua acțiuni precum
+              adăugarea de noi produse, modificarea și ștergerea acestora,
+              moderarea interacțiunilor utilizatorilor sau analiza datelor de
+              utilizare pentru îmbunătățirea performanței și a experienței
+              utilizatorilor.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>2.4 Mediu de operare</h4>
+          <p>
+            MoX este disponibilă într-un format online, accesibil de pe orice
+            dispozitiv cu conexiune la internet, oferind utilizatorilor
+            flexibilitate și accesibilitate.
+          </p>
+        </section>
+
+        <section>
+          <h4>2.5 Design si constrangeri de implementare</h4>
+          <p>
+            Aplicația MoX a fost dezvoltată folosind Node.js, un mediu de
+            execuție JavaScript, pentru a crea serverul web care primește și
+            procesează cererile de la utilizatori. Pentru partea de frontend,
+            HTML, CSS și JavaScript au fost folosite pentru a crea interfața cu
+            utilizatorul.
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <h3>3. External Interface Requirements</h3>
+
+        <section>
+          <h4>3.1 User Interfaces</h4>
+          <img
+            src="./assets/index-page.png"
+            style="width: 800px; height: 450px; object-fit: fill"
+          />
+          <img
+            src="./assets/details-page.png"
+            style="width: 800px; height: 450px; object-fit: fill"
+          /><img
+            src="./assets/categories-page.png"
+            style="width: 800px; height: 450px; object-fit: fill"
+          />
+          <img
+            src="./assets/category-page.png"
+            style="width: 800px; height: 450px; object-fit: fill"
+          />
+          <img
+            src="./assets/statistics-page.png"
+            style="width: 800px; height: 450px; object-fit: fill"
+          /><img
+            src="./assets/details-mobile.png"
+            style="width: 262px; height: 450px; object-fit: fill"
+          />
+          <img
+            src="./assets/categories-mobile.png"
+            style="width: 262px; height: 450px; object-fit: fill"
+          />
+          <img
+            src="./assets/index-mobile.png"
+            style="width: 262px; height: 450px; object-fit: fill"
+          />
+        </section>
+
+        <section>
+          <h4>3.2 Interfața software</h4>
+          <p>
+            Cerințele minime de software ale MoX sunt un browser funcțional și
+            conexiune la Internet.
+          </p>
+        </section>
+
+        <section>
+          <h4>3.4 Interfața de comunicare</h4>
+          <p>
+            MoX necesită conexiune la internet. Comunicarea standard care
+            trebuie utilizată este HTTP.
+          </p>
+        </section>
+      </section>
+    </article>
+  </body>
+</html>

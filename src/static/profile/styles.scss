@@ -1,0 +1,225 @@
+$background-color: #37306b;
+$primary-color: #d27685;
+$secondary-color: #66347f;
+$tertiary-color: #9e4784;
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+#main {
+  padding: 1rem 2rem;
+}
+
+.profile-container {
+  height: 800px;
+  border-radius: 7px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  background-color: $secondary-color;
+}
+
+.menu-container {
+  background-color: $secondary-color;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+  border-radius: 7px;
+  position: relative;
+  display: flex;
+  img {
+    width: 40%;
+  }
+  .profile-image {
+    margin: 20%; /* Adjust the value as needed */
+  }
+}
+
+.data-container {
+  display: flex;
+  background-color: $tertiary-color;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  border-radius: 0px 7px 7px 0px;
+  color: white;
+}
+
+ul.commands {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-color: $secondary-color;
+  a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 2rem 2rem;
+    text-decoration: none;
+    font-size: 120%;
+    border-bottom: 1px solid $tertiary-color;
+    align-items: flex-start;
+
+    &:hover {
+      background-color: $tertiary-color;
+    }
+  }
+}
+.menu-text {
+  margin-left: 5px;
+}
+
+.active {
+  background-color: $tertiary-color;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $secondary-color;
+  color: white;
+  font-size: 120%;
+  width: 100%;
+  p {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 20px 30px;
+    border-bottom: 1px solid $tertiary-color;
+    width: 100%;
+  }
+}
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  height: 100%;
+  .title {
+    font-size: 300%;
+    margin: 60px 0px 0px 0px;
+  }
+  .subtitle {
+    margin: 60px 0px 60px 0px;
+    font-size: 200%;
+  }
+  button {
+    margin: 60px 0px 60px 0px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: $secondary-color;
+    color: white;
+    font-size: 120%;
+    &:hover {
+      background-color: $tertiary-color;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 0px 0px 0px;
+    width: 100%;
+    input {
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid white;
+      background-color: $secondary-color;
+      color: white;
+      font-size: 120%;
+      margin: 10px 0px 10px 0px;
+      padding: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      border-radius: 5px;
+      border: 1px solid white;
+      background-color: $secondary-color;
+      color: white;
+      font-size: 120%;
+      margin: 10px 0px 10px 0px;
+      padding: 10px;
+    }
+    button {
+      margin: 0px;
+    }
+  }
+}
+.dropdown {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-container {
+    height: auto;
+  }
+  .menu-container {
+    display: none;
+  }
+  .data-container {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    .content-block h1 {
+      font-size: 150%;
+      margin: 0px;
+      padding: 20px 0px 20px 0px;
+    }
+    .content-block button {
+      font-size: 100%;
+    }
+  }
+  .user-info {
+    p {
+      font-size: 70%;
+      padding: 10px;
+    }
+  }
+  .content-block form {
+    padding: 20px 0px 0px 0px;
+    input {
+      margin: 0px;
+      font-size: 70%;
+      height: 30px;
+    }
+    textarea {
+      font-size: 70%;
+      height: 100px;
+    }
+    button {
+      font-size: 70%;
+      height: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  .dropdown {
+    width: 90%;
+    display: block;
+    select {
+      margin-top: 10px;
+      width: 100%; /* Set the desired width */
+      height: 30px; /* Set the desired height */
+      font-size: 100%; /* Set the desired font size */
+      border-radius: 7px;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      background-color: $tertiary-color;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}

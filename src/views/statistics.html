@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../static/statistics/styles.css" />
+    <link rel="stylesheet" href="../static/navbar/styles.css" />
+    <link rel="stylesheet" href="../static/footer/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas2svg@1.0.16/gulpfile.min.js"></script>
+
+    <title>MoX - Movies and TV Shows Explorer</title>
+  </head>
+  <body>
+    <header id="page-header">##navbar##</header>
+
+    <div class="tab">
+      <button
+        class="bar-chart-tab"
+        onclick="loadChart('bar', 28, 12)"
+        id="bar-chart-tab"
+      >
+        Bar Chart
+      </button>
+      <button
+        class="SecondTab"
+        onclick="loadChart('pie', 2015, 2015)"
+        id="pie-chart-tab"
+      >
+        Pie Chart
+      </button>
+      <button
+        class="ThirdTab"
+        onclick="loadChart('line', 12, 2021)"
+        id="line-chart-tab"
+      >
+        Line Chart
+      </button>
+    </div>
+
+    <div class="statistics-container">
+      <div class="div-chart" id="chart-div">
+        <canvas id="chart"> </canvas>
+      </div>
+      <div class="chart-options">
+        <div class="select-box">
+          <label id="label-1">Genre 1</label>
+          <select id="select-1"></select>
+        </div>
+        <div class="select-box">
+          <label id="label-2">Genre 2</label>
+          <select id="select-2"></select>
+        </div>
+        <button class="results-button">See Results</button>
+        <div class="export-box">
+          <label id="export-label">Export Options</label>
+          <select id="export-select">
+            <option value="CSV">CSV</option>
+            <option value="WebP">WebP</option>
+            <option value="SVG">SVG</option>
+          </select>
+        </div>
+        <button class="export-button" id="export-button">Export</button>
+      </div>
+    </div>
+
+    <footer id="page-footer">##footer##</footer>
+
+    <script></script>
+
+    <script src="../static/statistics/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/navbar/script.js"></script>
+    <script src="svg-export.min.js"></script>
+    <script src="https://unpkg.com/canvg/lib/umd.js"></script>
+  </body>
+</html>

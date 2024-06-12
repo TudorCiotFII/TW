@@ -1,0 +1,32 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #37306b;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #d27685;
+  text-decoration: none;
+}
+
+.emoji {
+  font-size: 100px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=styles.css.map */

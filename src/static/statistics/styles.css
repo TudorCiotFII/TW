@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #37306b;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.statistics-container {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  max-width: 1200px;
+  background-color: #66347f;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.div-chart {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element.style {
+  height: 80%;
+}
+
+.chart-options {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-button {
+  margin: 20px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.export-button {
+  margin: 20px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.chart-options .select-box {
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.chart-options label {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.chart-options .export-box {
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.chart-options select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.tab {
+  margin: 2% auto 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tab button {
+  flex: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #66347f;
+}
+
+.tab button.active {
+  background-color: #66347f;
+}
+
+@media (max-width: 768px) {
+  .statistics-container {
+    flex-direction: column;
+    height: 100%;
+    max-width: none;
+  }
+  .div-chart {
+    width: 100%;
+    height: 50%;
+  }
+  .chart-options {
+    width: 100%;
+    height: 50%;
+  }
+  .chart-options .select-box {
+    width: 100%;
+  }
+  .chart-options .export-box {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
